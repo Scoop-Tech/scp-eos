@@ -21,20 +21,15 @@ See [Scoop Security](https://github.com/Scoop-Tech/scpx-svr/blob/master/sec.md) 
 ### Table Fields
 
 Field               | Datatype        | Usage
-------------        | --------------- | -----------------------------------------------------
+---                 | ----            | ----
 ```owner```         | name            | EOS account name of the user associated with the row
 ```e_email```       | std::string     | encrypted email address of the user associated with the row
 ```h_email_ui128``` | uint128_t       | 128-bit hash of the encrypted email address of the user associated with the row
-
-
-* ```owner``` - EOS account name of the user associated with the row (primary key, datatype: name).
-* ```e_email``` - encrypted email address of the user associated with the row (datatype: std::string)
-* ```h_email_ui128``` - 128-bit hash of the encrypted email address of the user associated with the row (secondary key, datatype: uint128_t).
-* ```created_at``` - timestamp of row creation (datatype: time_point_sec).
-* ```assets_json``` - encrypted user asset data (datatype: std::string).
-* ```data_json``` - encrypted user app data (datatype: std::string).
-* ```ex1``` - reserved for future use (datatype: std::string).
-* ```ex2``` - reserved for future use (datatype: std::string).
+```created_at```    | time_point_sec  | timestamp of row creation
+```assets_json```   | std::string     | encrypted user asset data
+```data_json```     | std::string     | encrypted user app data (settings)
+```ex1```           | std::string     | reserved for future use
+```ex2```           | std::string     | reserved for future use
 
 ### Contract Methods
 
