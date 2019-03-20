@@ -34,7 +34,8 @@ public:
         }
     }
 
-    [[eosio::action]] void deleteuser(const name scp_account) {
+    [[eosio::action]] void deleteuser(const name scp_account)
+    {
         require_auth(_self);
         print("deleteuser - account = ", eosio::name{scp_account}, "\n");
         auto itr = table.find(scp_account.value);
@@ -42,7 +43,8 @@ public:
         table.erase(itr);
     }
 
-    [[eosio::action]] void setassets(const name scp_account, std::string assets_json) {
+    [[eosio::action]] void setassets(const name scp_account, std::string assets_json)
+    {
         require_auth(_self);
         print("setassets - account = ", eosio::name{scp_account}, "\n");
         table.modify(table.get(scp_account.value), _self, [&](auto &setvalue) {
@@ -50,7 +52,8 @@ public:
         });
     }
 
-    [[eosio::action]] void setdata(const name scp_account, std::string data_json) {
+    [[eosio::action]] void setdata(const name scp_account, std::string data_json)
+    {
         require_auth(_self);
         print("setdata - account = ", eosio::name{scp_account}, "\n");
         table.modify(table.get(scp_account.value), _self, [&](auto &setvalue) {
