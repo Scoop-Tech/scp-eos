@@ -35,19 +35,19 @@ Field               | Datatype        | Key       | Usage
 
 * ```void newuser(const name scp_account, const std::string e_email, const uint128_t e_hash_hex128)```
 
-  creates a user row for the specified SCPX EOS chain account name, email and email hash.
+  Creates a user row for the specified SCPX EOS chain account name, email and email hash.
 
 * ```void deleteuser(const name scp_account)```
 
-  deletes a user row for the specified SCPX EOS chain account name.
+  Deletes a user row for the specified SCPX EOS chain account name.
 
 * ```void setassets(const name scp_account, std::string assets_json)```
 
-  sets user asset data for the specified SCPX EOS chain account name.
+  Sets user asset data for the specified SCPX EOS chain account name.
 
 * ```void setdata(const name scp_account, std::string data_json)```
 
-  sets user app data for the specified SCPX EOS chain account name.
+  Sets user app data for the specified SCPX EOS chain account name.
 
 ### Building from Source
 
