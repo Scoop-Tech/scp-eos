@@ -33,7 +33,7 @@ Field               | Datatype        | Key       | Usage
 
 ### Contract Methods
 
-* ````void newuser(const name scp_account, const std::string e_email, const uint128_t e_hash_hex128)```
+* ```void newuser(const name scp_account, const std::string e_email, const uint128_t e_hash_hex128)```
 
   creates a user row for the specified SCPX EOS chain account name, email and email hash.
 
