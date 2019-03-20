@@ -1,0 +1,148 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Tue Mar 19 18:05:03 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "deleteuser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "e_hash_hex128",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "newuser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scp_account",
+                    "type": "name"
+                },
+                {
+                    "name": "e_email",
+                    "type": "string"
+                },
+                {
+                    "name": "e_hash_hex128",
+                    "type": "uint128"
+                }
+            ]
+        },
+        {
+            "name": "setassets",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scp_account",
+                    "type": "name"
+                },
+                {
+                    "name": "assets_json",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setdata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scp_account",
+                    "type": "name"
+                },
+                {
+                    "name": "data_json",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "users_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "e_email",
+                    "type": "string"
+                },
+                {
+                    "name": "h_email_ui128",
+                    "type": "uint128"
+                },
+                {
+                    "name": "created_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "assets_json",
+                    "type": "string"
+                },
+                {
+                    "name": "data_json",
+                    "type": "string"
+                },
+                {
+                    "name": "ex1",
+                    "type": "string"
+                },
+                {
+                    "name": "ex2",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "deleteuser",
+            "type": "deleteuser",
+            "ricardian_contract": "INSERT CONTRACT FOR deleteuser ACTION HERE."
+        },
+        {
+            "name": "newuser",
+            "type": "newuser",
+            "ricardian_contract": "INSERT CONTRACT FOR newuser ACTION HERE."
+        },
+        {
+            "name": "setassets",
+            "type": "setassets",
+            "ricardian_contract": "INSERT CONTRACT FOR setassets ACTION HERE."
+        },
+        {
+            "name": "setdata",
+            "type": "setdata",
+            "ricardian_contract": "INSERT CONTRACT FOR setdata ACTION HERE."
+        }
+    ],
+    "tables": [
+        {
+            "name": "scpusers",
+            "type": "users_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "CLAUSE 1",
+            "body": "INSERT CLAUSE 1."
+        },
+        {
+            "id": "CLAUSE 2",
+            "body": "INSERT CLAUSE 2."
+        },
+        {
+            "id": "CLAUSE 3",
+            "body": "INSERT CLAUSE 3."
+        }
+    ],
+    "variants": [],
+    "abi_extensions": []
+}
