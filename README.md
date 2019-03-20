@@ -20,6 +20,13 @@ See [Scoop Security](https://github.com/Scoop-Tech/scpx-svr/blob/master/sec.md) 
 
 ### Table Fields
 
+Field               | Datatype        | Usage
+------------        | --------------- | -----------------------------------------------------
+```owner```         | name            | EOS account name of the user associated with the row
+```e_email```       | std::string     | encrypted email address of the user associated with the row
+```h_email_ui128``` | uint128_t       | 128-bit hash of the encrypted email address of the user associated with the row
+
+
 * ```owner``` - EOS account name of the user associated with the row (primary key, datatype: name).
 * ```e_email``` - encrypted email address of the user associated with the row (datatype: std::string)
 * ```h_email_ui128``` - 128-bit hash of the encrypted email address of the user associated with the row (secondary key, datatype: uint128_t).
