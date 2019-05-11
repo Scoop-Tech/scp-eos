@@ -1,8 +1,9 @@
-# SCP-EOS (rc0)
+# Scoop Data Storage Contract (DSC)
+Release Candidate 4
 
-## SCPX Data Storage Contract
+## Overview
 
-EOS CPP contract for the [Scoop Wallet](https://github.com/Scoop-Tech/scpx-app) (**"Scoop Client"**).
+EOS CPP contract for the [Scoop Wallet](https://github.com/Scoop-Tech/scpx-app).
 
 [scpx contract](contracts/eos/scpx/scpx.cpp) runs on a public EOS chain instance maintained by [Scoop-Tech](https://github.com/Scoop-Tech) (https://eos.scoop.tech:4242/v1/chain/get_info). Note that this is not EOS mainnet: we have a strong requirement to support completely free account creation, which EOS mainnet does not facilitate. 
 
@@ -53,7 +54,7 @@ Field               | Datatype        | Key       | Usage
 
 The contract is built with [EOSIO.CDT 1.5.0](https://github.com/EOSIO/eosio.cdt).
 
-...
+
 
 
 
