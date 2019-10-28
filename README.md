@@ -1,5 +1,5 @@
 # Scoop Data Storage Contract (DSC)
-Release Candidate 4
+Release Candidate 5
 
 ## Overview
 
