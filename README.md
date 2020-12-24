@@ -1,6 +1,5 @@
 # Scoop Data Storage Contract (DSC)
-Release Candidate 5
-
+v0.9
 ## Overview
 
 EOS CPP contract for the [Scoop Wallet](https://github.com/Scoop-Tech/scpx-app).
